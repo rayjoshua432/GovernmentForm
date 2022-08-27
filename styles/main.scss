@@ -1,0 +1,517 @@
+@media (max-width:1399px) and (min-width:476px) {
+
+
+   * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+   }
+
+
+   body {
+      width: 80%;
+      min-width: 1120px;
+      height: 1367px;
+      margin: 40px auto;
+      border: 2px outset black 0.8;
+      position: relative;
+      box-shadow:
+         inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+         0 0 0 3px rgb(255, 255, 255),
+         0.3em 0.3em 1em rgba(0, 0, 0, 0.2);
+
+      form {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: nowrap;
+      }
+   }
+
+   p,
+   label,
+   span {
+      cursor: default;
+   }
+
+   input {
+      padding: 5px;
+      border: none;
+   }
+
+   input:focus {
+      border: 1px solid black;
+      border-style: none none solid none;
+      outline: none;
+      background-color: #f0f0f0fd;
+      border-radius: 3px;
+   }
+
+   .page-header {
+      padding: 5px;
+      font-size: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+      position: absolute;
+      top: 0;
+      right: 15px;
+   }
+
+   .container {
+      display: grid;
+      grid-template-columns: 100px minmax(450px, 1fr) minmax(0, 300px);
+      padding: 10px 20px;
+      height: 105px;
+
+      .logo {
+         width: 80px;
+         height: 80px;
+         justify-self: start;
+         align-self: center;
+      }
+
+      .title {
+         text-align: center;
+         min-width: 300px;
+         font-size: 30px;
+         font-family: 'Varela', sans-serif;
+         font-weight: bold;
+         align-self: center;
+      }
+
+      .small-table {
+         border-collapse: collapse;
+         border: 1.5px solid black;
+         height: 50px;
+         align-self: end;
+
+         .dark-bg {
+            background-color: rgb(185, 184, 184);
+         }
+
+         th {
+            font-size: 11px;
+            font-family: Arial,
+               Helvetica,
+               sans-serif;
+            text-align: left;
+            padding: 5px;
+         }
+
+         td {
+            border: 0.7px solid black;
+            height: 25px;
+            width: 20px;
+         }
+
+         input {
+            border: none;
+            height: 25px;
+            width: 20px;
+            padding: 6px;
+         }
+      }
+   }
+
+   .instruction {
+      display: grid;
+      margin: 0 20px;
+      grid-template-columns: 45% 55%;
+      border: 2px solid black;
+      border-radius: 25px;
+
+      .box-1,
+      .box-2 {
+         padding: 0 15px;
+         margin: 11px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 10px;
+
+         h3 {
+            text-align: center;
+            font-size: 14px;
+            padding-bottom: 15px;
+         }
+
+         ol {
+            list-style-type: decimal;
+         }
+      }
+   }
+
+   .option-box-title {
+      margin: 10px 20px 10px 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+   }
+
+   .option-box {
+      margin: 0 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+
+      input {
+         vertical-align: text-top;
+         margin-bottom: 5px;
+         cursor: pointer;
+      }
+
+      .box-1 {
+         grid-row: 2/3;
+         grid-column: 1/2;
+      }
+
+      .box-2 {
+         grid-row: 3/4;
+         grid-column: 1/2;
+      }
+
+      .box-3 {
+         grid-row: 2/3;
+         grid-column: 2/3;
+      }
+
+      .box-4 {
+         grid-row: 3/4;
+         grid-column: 2/3;
+      }
+
+      .box-5 {
+         grid-row: 2/3;
+         grid-column: 3/4;
+      }
+
+      .box-6 {
+         grid-row: 3/4;
+         grid-column: 3/4;
+      }
+   }
+
+   .em-text {
+      font-style: italic;
+      font-size: 10px;
+      font-weight: lighter;
+   }
+
+   .info-form {
+      margin: 10px 20px 0 20px;
+      width: 1060px;
+      font-family: Arial,
+         Helvetica,
+         sans-serif;
+      font-size: 11px;
+      display: grid;
+
+
+      .form-name {
+         display: flex;
+         justify-content: space-between;
+         border: 2px solid black;
+         padding: 5px;
+         font-weight: bold;
+         height: 50px;
+      }
+
+      .title-1,
+      .title-2,
+      .title-3,
+      .title-4,
+      .title-5,
+      .title-6,
+      .title-7,
+      .title-8 {
+         border: 2px solid black;
+         border-style: none solid solid solid;
+         padding: 3px;
+         background-color: rgb(185, 184, 184);
+         cursor: default;
+      }
+
+      .textbox-1,
+      .textbox-2 {
+         display: grid;
+         border: 2px solid black;
+         border-style: none solid solid solid;
+         grid-template-columns: 1fr 1fr;
+         padding: 0 5px;
+         height: 50px;
+
+         div {
+            padding: 5px 5px;
+         }
+
+         input {
+            width: 95%;
+            margin-left: 10px;
+         }
+      }
+
+      .textbox-3 {
+         display: grid;
+         border: 2px solid black;
+         border-style: none solid solid solid;
+         grid-template-columns: 13% 1fr 50%;
+         padding: 0 5px;
+         height: 50px;
+
+         .small-text-input {
+            width: 195px;
+            padding: 0 10px;
+            border: 1px solid black;
+            border-style: none none solid none;
+         }
+
+         label {
+            padding: 2px 7px;
+         }
+
+         div {
+            padding: 5px 5px;
+         }
+
+         input {
+            vertical-align: middle;
+         }
+      }
+
+      .textbox-4 {
+         display: grid;
+         border: 2px solid black;
+         border-style: none solid solid solid;
+         grid-template-columns: 1fr 1fr;
+         padding: 0 5px;
+         height: 50px;
+
+         .grid-checkbox {
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            text-align: center;
+
+            input {
+               vertical-align: middle;
+               cursor: pointer;
+            }
+
+            label {
+               padding: 0 5px;
+            }
+
+            .cbox-1 {
+               grid-column: 1/2;
+            }
+         }
+      }
+
+      .textbox-5 {
+         display: grid;
+         border: 2px solid black;
+         border-style: none solid solid solid;
+         grid-template-columns: repeat(5, 134px) 115px 110px 90px 90px;
+         grid-template-rows: repeat(4, 35px);
+         height: 140px;
+         text-align: center;
+
+         div {
+            height: 35px;
+         }
+
+         input {
+            margin-top: 2px;
+         }
+
+         .small-input {
+            width: 100px;
+            padding: 7px 5px;
+         }
+
+         .med-input {
+            width: 125px;
+            padding: 7px 5px;
+         }
+
+         .update-heirs-checkbox {
+            margin-top: 5px;
+            cursor: pointer;
+         }
+
+      }
+
+      .textbox-6 {
+         display: grid;
+         border: 2px solid black;
+         border-style: none solid solid solid;
+         grid-template-columns: 1fr 1fr;
+         height: 220px;
+
+         .contact-box-1 {
+            width: 765px;
+
+            .address-1 {
+               border: 2px solid black;
+               border-style: none solid solid none;
+               display: grid;
+               grid-template-columns: 140px 130px 160px 120px 110px 100px;
+               grid-template-rows: 45px;
+               padding-left: 5px;
+            }
+
+            .address-2 {
+               border: 2px solid black;
+               border-style: none solid solid none;
+               display: grid;
+               grid-template-columns: 140px 130px 390px 100px;
+               grid-template-rows: 48px;
+               padding-left: 5px;
+            }
+         }
+
+         .contact-box-2 {
+            padding: 0 10px;
+            border-bottom: 2px solid black;
+
+            .foreign-address {
+               display: grid;
+               height: 30px;
+               gap: 5px;
+
+               input {
+                  outline: 1.5px solid black;
+                  height: 20px;
+                  margin-top: 2px;
+               }
+            }
+         }
+      }
+
+      .textbox-7 {
+         display: grid;
+         border: 2px solid black;
+         border-style: none solid solid solid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr;
+         padding: 0 5px;
+
+         .certi-text {
+            justify-self: center;
+            padding: 10px 0;
+         }
+
+         .certi-sign {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            input {
+               width: 200px;
+               border: 1px solid black;
+               border-style: none none solid none;
+               justify-self: center;
+               text-align: center;
+            }
+
+            label {
+               justify-self: center;
+               padding-top: 5px;
+            }
+         }
+      }
+
+      .textbox-8 {
+         display: grid;
+         border: 2px solid black;
+         border-style: none solid solid solid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 1fr;
+         height: 90px;
+
+         .doc-box-1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+            input {
+               cursor: pointer;
+            }
+
+            label {
+               padding-left: 5px;
+            }
+
+            .dbox-1 {
+               grid-column: 1/2;
+               grid-row: 2/3;
+            }
+
+            .dbox-2 {
+               grid-column: 2/3;
+               grid-row: 2/3;
+            }
+
+            .dbox-3 {
+               grid-column: 1/2;
+               grid-row: 3/4;
+            }
+
+            .dbox-4 {
+               grid-column: 1/2;
+               grid-row: 4/5;
+            }
+
+            .dbox-5 {
+               grid-column: 2/3;
+               grid-row: 3/4;
+            }
+
+            .dbox-6 {
+               grid-column: 2/3;
+               grid-row: 4/5;
+
+               input {
+                  width: 120px;
+                  height: 20px;
+                  border-bottom: 1px solid black;
+               }
+            }
+         }
+
+         .doc-box-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 20px 30px;
+            border: none;
+            outline: none;
+         }
+      }
+   }
+
+   footer {
+      text-align: center;
+      font-family: Arial,
+         Helvetica,
+         sans-serif;
+      font-style: italic;
+      cursor: default;
+
+      p {
+         font-weight: bold;
+         font-size: 14px;
+      }
+
+      span {
+         font-size: 8px;
+         position: absolute;
+         right: 30px;
+         bottom: 55px;
+      }
+   }
+}
+
+@media (max-width:1920px) and (min-width:1400px) {
+   .info-form {
+      .textbox-5 {
+         grid-template-columns: repeat(5, 135px) 115px 110px 1fr 1fr;
+      }
+   }
+}

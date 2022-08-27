@@ -1,0 +1,427 @@
+@media (max-width: 1399px) and (min-width: 476px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 80%;
+    min-width: 1120px;
+    height: 1367px;
+    margin: 40px auto;
+    border: 2px outset black 0.8;
+    position: relative;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 3px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.2);
+  }
+  body form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  p,
+label,
+span {
+    cursor: default;
+  }
+  input {
+    padding: 5px;
+    border: none;
+  }
+  input:focus {
+    border: 1px solid black;
+    border-style: none none solid none;
+    outline: none;
+    background-color: rgba(240, 240, 240, 0.9921568627);
+    border-radius: 3px;
+  }
+  .page-header {
+    padding: 5px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 100px minmax(450px, 1fr) minmax(0, 300px);
+    padding: 10px 20px;
+    height: 105px;
+  }
+  .container .logo {
+    width: 80px;
+    height: 80px;
+    justify-self: start;
+    align-self: center;
+  }
+  .container .title {
+    text-align: center;
+    min-width: 300px;
+    font-size: 30px;
+    font-family: "Varela", sans-serif;
+    font-weight: bold;
+    align-self: center;
+  }
+  .container .small-table {
+    border-collapse: collapse;
+    border: 1.5px solid black;
+    height: 50px;
+    align-self: end;
+  }
+  .container .small-table .dark-bg {
+    background-color: rgb(185, 184, 184);
+  }
+  .container .small-table th {
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 5px;
+  }
+  .container .small-table td {
+    border: 0.7px solid black;
+    height: 25px;
+    width: 20px;
+  }
+  .container .small-table input {
+    border: none;
+    height: 25px;
+    width: 20px;
+    padding: 6px;
+  }
+  .instruction {
+    display: grid;
+    margin: 0 20px;
+    grid-template-columns: 45% 55%;
+    border: 2px solid black;
+    border-radius: 25px;
+  }
+  .instruction .box-1,
+.instruction .box-2 {
+    padding: 0 15px;
+    margin: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  .instruction .box-1 h3,
+.instruction .box-2 h3 {
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  .instruction .box-1 ol,
+.instruction .box-2 ol {
+    list-style-type: decimal;
+  }
+  .option-box-title {
+    margin: 10px 20px 10px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  }
+  .option-box {
+    margin: 0 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .option-box input {
+    vertical-align: text-top;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .option-box .box-1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .option-box .box-2 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .option-box .box-3 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .option-box .box-4 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  .option-box .box-5 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+  .option-box .box-6 {
+    grid-row: 3/4;
+    grid-column: 3/4;
+  }
+  .em-text {
+    font-style: italic;
+    font-size: 10px;
+    font-weight: lighter;
+  }
+  .info-form {
+    margin: 10px 20px 0 20px;
+    width: 1060px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    display: grid;
+  }
+  .info-form .form-name {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 5px;
+    font-weight: bold;
+    height: 50px;
+  }
+  .info-form .title-1,
+.info-form .title-2,
+.info-form .title-3,
+.info-form .title-4,
+.info-form .title-5,
+.info-form .title-6,
+.info-form .title-7,
+.info-form .title-8 {
+    border: 2px solid black;
+    border-style: none solid solid solid;
+    padding: 3px;
+    background-color: rgb(185, 184, 184);
+    cursor: default;
+  }
+  .info-form .textbox-1,
+.info-form .textbox-2 {
+    display: grid;
+    border: 2px solid black;
+    border-style: none solid solid solid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5px;
+    height: 50px;
+  }
+  .info-form .textbox-1 div,
+.info-form .textbox-2 div {
+    padding: 5px 5px;
+  }
+  .info-form .textbox-1 input,
+.info-form .textbox-2 input {
+    width: 95%;
+    margin-left: 10px;
+  }
+  .info-form .textbox-3 {
+    display: grid;
+    border: 2px solid black;
+    border-style: none solid solid solid;
+    grid-template-columns: 13% 1fr 50%;
+    padding: 0 5px;
+    height: 50px;
+  }
+  .info-form .textbox-3 .small-text-input {
+    width: 195px;
+    padding: 0 10px;
+    border: 1px solid black;
+    border-style: none none solid none;
+  }
+  .info-form .textbox-3 label {
+    padding: 2px 7px;
+  }
+  .info-form .textbox-3 div {
+    padding: 5px 5px;
+  }
+  .info-form .textbox-3 input {
+    vertical-align: middle;
+  }
+  .info-form .textbox-4 {
+    display: grid;
+    border: 2px solid black;
+    border-style: none solid solid solid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5px;
+    height: 50px;
+  }
+  .info-form .textbox-4 .grid-checkbox {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+  }
+  .info-form .textbox-4 .grid-checkbox input {
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .info-form .textbox-4 .grid-checkbox label {
+    padding: 0 5px;
+  }
+  .info-form .textbox-4 .grid-checkbox .cbox-1 {
+    grid-column: 1/2;
+  }
+  .info-form .textbox-5 {
+    display: grid;
+    border: 2px solid black;
+    border-style: none solid solid solid;
+    grid-template-columns: repeat(5, 134px) 115px 110px 90px 90px;
+    grid-template-rows: repeat(4, 35px);
+    height: 140px;
+    text-align: center;
+  }
+  .info-form .textbox-5 div {
+    height: 35px;
+  }
+  .info-form .textbox-5 input {
+    margin-top: 2px;
+  }
+  .info-form .textbox-5 .small-input {
+    width: 100px;
+    padding: 7px 5px;
+  }
+  .info-form .textbox-5 .med-input {
+    width: 125px;
+    padding: 7px 5px;
+  }
+  .info-form .textbox-5 .update-heirs-checkbox {
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .info-form .textbox-6 {
+    display: grid;
+    border: 2px solid black;
+    border-style: none solid solid solid;
+    grid-template-columns: 1fr 1fr;
+    height: 220px;
+  }
+  .info-form .textbox-6 .contact-box-1 {
+    width: 765px;
+  }
+  .info-form .textbox-6 .contact-box-1 .address-1 {
+    border: 2px solid black;
+    border-style: none solid solid none;
+    display: grid;
+    grid-template-columns: 140px 130px 160px 120px 110px 100px;
+    grid-template-rows: 45px;
+    padding-left: 5px;
+  }
+  .info-form .textbox-6 .contact-box-1 .address-2 {
+    border: 2px solid black;
+    border-style: none solid solid none;
+    display: grid;
+    grid-template-columns: 140px 130px 390px 100px;
+    grid-template-rows: 48px;
+    padding-left: 5px;
+  }
+  .info-form .textbox-6 .contact-box-2 {
+    padding: 0 10px;
+    border-bottom: 2px solid black;
+  }
+  .info-form .textbox-6 .contact-box-2 .foreign-address {
+    display: grid;
+    height: 30px;
+    gap: 5px;
+  }
+  .info-form .textbox-6 .contact-box-2 .foreign-address input {
+    outline: 1.5px solid black;
+    height: 20px;
+    margin-top: 2px;
+  }
+  .info-form .textbox-7 {
+    display: grid;
+    border: 2px solid black;
+    border-style: none solid solid solid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 5px;
+  }
+  .info-form .textbox-7 .certi-text {
+    justify-self: center;
+    padding: 10px 0;
+  }
+  .info-form .textbox-7 .certi-sign {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .info-form .textbox-7 .certi-sign input {
+    width: 200px;
+    border: 1px solid black;
+    border-style: none none solid none;
+    justify-self: center;
+    text-align: center;
+  }
+  .info-form .textbox-7 .certi-sign label {
+    justify-self: center;
+    padding-top: 5px;
+  }
+  .info-form .textbox-8 {
+    display: grid;
+    border: 2px solid black;
+    border-style: none solid solid solid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 90px;
+  }
+  .info-form .textbox-8 .doc-box-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .info-form .textbox-8 .doc-box-1 input {
+    cursor: pointer;
+  }
+  .info-form .textbox-8 .doc-box-1 label {
+    padding-left: 5px;
+  }
+  .info-form .textbox-8 .doc-box-1 .dbox-1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .info-form .textbox-8 .doc-box-1 .dbox-2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .info-form .textbox-8 .doc-box-1 .dbox-3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .info-form .textbox-8 .doc-box-1 .dbox-4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .info-form .textbox-8 .doc-box-1 .dbox-5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .info-form .textbox-8 .doc-box-1 .dbox-6 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .info-form .textbox-8 .doc-box-1 .dbox-6 input {
+    width: 120px;
+    height: 20px;
+    border-bottom: 1px solid black;
+  }
+  .info-form .textbox-8 .doc-box-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 30px;
+    border: none;
+    outline: none;
+  }
+  footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    cursor: default;
+  }
+  footer p {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  footer span {
+    font-size: 8px;
+    position: absolute;
+    right: 30px;
+    bottom: 55px;
+  }
+}
+@media (max-width: 1920px) and (min-width: 1400px) {
+  .info-form .textbox-5 {
+    grid-template-columns: repeat(5, 135px) 115px 110px 1fr 1fr;
+  }
+}/*# sourceMappingURL=main.css.map */
