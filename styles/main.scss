@@ -55,7 +55,7 @@
       right: 15px;
    }
 
-   .container {
+   .main-header {
       display: grid;
       grid-template-columns: 100px minmax(450px, 1fr) minmax(0, 300px);
       padding: 10px 20px;
@@ -509,6 +509,7 @@
 }
 
 @media (max-width:1920px) and (min-width:1400px) {
+
    .info-form {
       .textbox-5 {
          grid-template-columns: repeat(5, 135px) 115px 110px 1fr 1fr;

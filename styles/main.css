@@ -42,19 +42,19 @@ span {
     top: 0;
     right: 15px;
   }
-  .container {
+  .main-header {
     display: grid;
     grid-template-columns: 100px minmax(450px, 1fr) minmax(0, 300px);
     padding: 10px 20px;
     height: 105px;
   }
-  .container .logo {
+  .main-header .logo {
     width: 80px;
     height: 80px;
     justify-self: start;
     align-self: center;
   }
-  .container .title {
+  .main-header .title {
     text-align: center;
     min-width: 300px;
     font-size: 30px;
@@ -62,27 +62,27 @@ span {
     font-weight: bold;
     align-self: center;
   }
-  .container .small-table {
+  .main-header .small-table {
     border-collapse: collapse;
     border: 1.5px solid black;
     height: 50px;
     align-self: end;
   }
-  .container .small-table .dark-bg {
+  .main-header .small-table .dark-bg {
     background-color: rgb(185, 184, 184);
   }
-  .container .small-table th {
+  .main-header .small-table th {
     font-size: 11px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     padding: 5px;
   }
-  .container .small-table td {
+  .main-header .small-table td {
     border: 0.7px solid black;
     height: 25px;
     width: 20px;
   }
-  .container .small-table input {
+  .main-header .small-table input {
     border: none;
     height: 25px;
     width: 20px;
